@@ -10,7 +10,7 @@ runcurrentcmd()
     {
         this_w := word_array%a_index%
 
-        if RegExMatch(this_w, "[a-zA-Z]:(\\([a-zA-Z0-9_\x51-\xff])+)+", path_)
+        if RegExMatch(this_w, "[a-zA-Z]:(\\([a-zA-Z0-9_])+)+", path_)
         {
             IfInString path_, :\
             {
